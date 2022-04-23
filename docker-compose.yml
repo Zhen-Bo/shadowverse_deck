@@ -1,0 +1,7 @@
+version: '3'
+services:
+  web:
+    image: ghcr.io/zhen-bo/shadowverse_deck:latest
+    volumes:
+      - ./.env:/app/.env:ro
+    restart: unless-stopped
